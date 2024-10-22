@@ -1,8 +1,8 @@
 import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
 import './App.css'
-import Header from './components/header'
+import Header from './components/Header/Header'
+import TaskList from './components/TaskList/TaskList'
+import { TASKS } from '../TASKS'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -10,6 +10,16 @@ function App() {
   return (
     <>
     <Header/>
+    <div className='tasks-container'>
+      {
+        TASKS.map((task) =>
+        <TaskList
+        key = {task.id}
+        title = {task.title}
+        />
+        )
+      }
+    </div>
     </>
   )
 }

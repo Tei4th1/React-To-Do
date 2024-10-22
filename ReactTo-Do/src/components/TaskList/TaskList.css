@@ -1,0 +1,31 @@
+.taskFrame {
+    border: 1px solid azure;
+    font-family: "Oxanium", sans-serif;
+    width: 15rem;
+    padding: 0.5rem;
+    border-radius: 8px;
+    background: #121619;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    }
+.search {
+    position: absolute;
+    width: 10rem;
+}
+.task {
+    color: azure;
+    background-color: rgb(30, 27, 44);
+    padding: 1em;
+}
+.complite {
+    border-radius: 10px;
+    background: azure;
+    border: 1px solid rgb(146, 165, 165); 
+    width: 1em;
+    height: 1em;
+}
+.delete {
+    width: 1em;
+    height: 1em;
+}
