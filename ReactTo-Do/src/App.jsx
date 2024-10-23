@@ -9,7 +9,7 @@ function App() {
 
   return (
     <>
-    <Header/>
+    {/* <Header/> */}
     <div className='tasks-container'>
       {
         TASKS.map((task) =>
