@@ -1,8 +1,8 @@
 import { useState } from 'react'
 import './App.css'
 import Header from './components/Header/Header'
-import TaskList from './components/TaskList/TaskList'
-import { TASKS } from '../TASKS'
+import TaskFrame from './components/TaskList/TaskFrame'
+import { TASKS } from './components/TaskList/TASKS'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -10,16 +10,7 @@ function App() {
   return (
     <>
     <Header/>
-    <div className='tasks-container'>
-      {
-        TASKS.map((task) =>
-        <TaskList
-        key = {task.id}
-        title = {task.title}
-        />
-        )
-      }
-    </div>
+    <TaskFrame/>
     </>
   )
 }
